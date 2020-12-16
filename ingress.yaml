@@ -14,9 +14,9 @@ spec:
         paths: 
           - path: /countries
             backend:
-              serviceName: ${APP_NAME}
+              serviceName: countries
               servicePort: 80        
           - path: /airports
             backend:
-              serviceName: ${APP_NAME}
+              serviceName: airports
               servicePort: 80      
