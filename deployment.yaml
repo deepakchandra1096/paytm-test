@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: airports
+  name: Applicaion_Name
   labels:
-    app: airports
+    app: Applicaion_Name
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: airports
+      app: Applicaion_Name
   template:
     metadata:
       labels:
-        app: airports
+        app: Applicaion_Name
     spec:
       containers:
-      - name: airports
-        image: airports:IMAGE_TAG
+      - name: Applicaion_Name
+        image: Applicaion_Name:IMAGE_TAG
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
