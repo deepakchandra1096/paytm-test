@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: PB
+  labels:
+    app.kubernetes.io/name: PB
+    app.kubernetes.io/version: 1.16.0
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+spec:
+  rules:
+    - host: mediawiki.info.co
+      http:
+        paths: 
+          - path: /countries
+            backend:
+              serviceName: ${APP_NAME}
+              servicePort: 80        
+          - path: /airports
+            backend:
+              serviceName: ${APP_NAME}
+              servicePort: 80      
