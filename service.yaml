@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ${APP_NAME}
+  name: Applicaion_Name
   labels:
-    run: ${APP_NAME}
+    run: Applicaion_Name
 spec:
   type: CluserIP
   ports:
@@ -11,4 +11,4 @@ spec:
     targetPort: 80
     protocol: TCP
   selector:
-    app: ${APP_NAME}
+    app: Applicaion_Name
