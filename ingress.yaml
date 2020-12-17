@@ -15,8 +15,8 @@ spec:
           - path: /countries
             backend:
               serviceName: countries
-              servicePort: 80        
+              servicePort: 8080        
           - path: /airports
             backend:
               serviceName: airports
-              servicePort: 80      
+              servicePort: 8080      
