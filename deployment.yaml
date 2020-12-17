@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: Applicaion_Name
-        image: Applicaion_Name:IMAGE_TAG
+        image: deepak1096/Applicaion_Name:IMAGE_TAG
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
