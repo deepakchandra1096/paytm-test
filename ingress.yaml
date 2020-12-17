@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: PB
   labels:
-    app.kubernetes.io/name: PB
+    app.kubernetes.io/name: airports
     app.kubernetes.io/version: 1.16.0
   annotations:
     deployment.kubernetes.io/revision: "1"
